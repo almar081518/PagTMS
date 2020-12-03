@@ -1,0 +1,36 @@
+.redes{
+    height:100px;
+  position:fixed;
+  right: 0;
+  top: 30;
+    padding:    0px;
+    flex-direction:column;
+    align-items:flex-end;
+    z-index: 100;
+    
+
+}
+
+.sociales{
+    text-align: center;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    
+}
+
+.sociales li{
+ 
+    border-radius: 7rem;
+   
+}
+.sociales a{
+    padding: 2rem;
+    text-decoration: none;
+
+    
+  
+
+
+
+}

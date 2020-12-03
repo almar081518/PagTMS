@@ -1,0 +1,179 @@
+/*
+	Color fondo: #632432;
+	Color header: 246355;
+	Color borde: 0F362D;
+	Color iluminado: 369681;
+*/
+
+/*hoja de estilo para la plantilla*/
+
+/*el (*) significa que lo que se indica dentro de las llaves, es aplicable
+    a todos los elementos de la página HTML5 */
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	/* Indicamos que la visualización de todos los elementos listados, se apliquen en forma de bloque (block)*/
+	header, section, footer, aside, nav, article, figure, figcaption, hgroup{
+		display: block;
+	}
+	
+	/* indicar que todo el texto de la página, sea alineada al centro*/
+	body{
+		text-align:center;
+	}
+	
+	/*Se indica el estilo que unicamente aplica 
+	al id contenedor*/
+	#contenedor{
+		width: 100%;
+		margin: 15px auto;
+		text-align:left;
+	}
+	
+	#encabezado{
+		border: 1px solid #14213d;
+		padding: 20px;
+		background: #14213d;
+	}
+	
+	#barra_navegacion{
+		background:#a8cee2;
+		padding: 5px 15px;
+	}
+	
+	/*vamos a dar estilo a los componentes <li>
+	dentro de la barra de navegación*/
+	
+	#barra_navegacion li {
+		display: inline-block;
+		list-style: none;
+		padding: 5px;
+		font: bold 16px athena;
+	}
+	
+	#barra_navegacion li a{
+		text-decoration: none;
+		color: #2e2e2e;
+		padding: 16px;
+	}
+	
+	#barra_navegacion li a:hover{
+		color: black;
+		background-color:white;
+	}
+	
+	/*indicamos la forma en como se acomodaran los
+	elemento html dentro del contenido*/
+	#contenido{
+		float: left;
+		width: 100%;
+		margin: 20px;
+	}
+	
+	/*agregamos estilo para la seccion de la barra 
+	lateral*/
+	#barra_lateral{
+		float: left;
+		width:  20%;
+		margin: 0px 0px;
+		padding: 20px;
+		background: #a8cee2;
+	}
+	
+	#articulo{
+		width: 70%;
+		margin: 0px;
+		padding: 20px;
+		float: left;
+	}
+	
+	#pie{
+		clear: both;
+		text-align: center;
+		padding: 20px;
+		border-top: 2px solid #999999;
+		background-color: #2e2e2e;
+		color: #FFFFFF;
+	}
+	#t2{
+		align-content: center;
+		color:#088A85;
+	}
+	 #ppp{
+	   
+		font-family:Georgia;
+	}
+	#p22{ 
+		font-family:Georgia; 
+	}
+	button{
+    
+        background-color: darkcyan;
+        border: 1px solid #111a91;
+        border-bottom: 1px solid darkcyan;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 0 0 cadetblue;
+        color: #fff;
+        font-weight: bold;
+        padding: 6px 20px;
+        text-align: center;
+        text-shadow: 0 -1px 0 blue;
+    }
+    
+    /*agregamos un efecto al botón, para que al momento en que se pase sobre el
+    modifique su estilo*/
+    button.submit:hover{
+        opacity: .85;
+        cursor: pointer;
+    }
+    
+    /*agregamos un efecto cuando el boton de enviar este activo*/
+    button.submit:active{
+        border: 1px solid cornflowerblue;
+        box-shadow: 0 0 10px 5px bisque;}
+        
+
+#main-container{
+	margin: 0px auto;
+	width: 1000px;
+}
+
+table{
+	background-color: rgba(106, 170, 212, 0.644);
+    text-align:center;
+    font-family:little;
+    font-weight: 100;
+	border-collapse:unset;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+	font-size: large;
+}
+
+thead{
+	background-color:#A9E2F3;
+	border-bottom: solid 100px BLACK;
+    color:black;
+    font-family:little;
+
+}
+
+
+
+tr:nth-child(even){
+	background-color:black;
+}
+
+tr:hover td{
+	background-color:#c1cbe0;
+	color: white;
+}
+
+.parra{
+	text-align:justify;
+	font-family: little;
+}

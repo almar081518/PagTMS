@@ -1,0 +1,129 @@
+/*quitamos el efecto focus de los elementos HTML5*/
+*:focus{
+   outline: none; 
+}
+
+/*Para todos los elementos que se encuentra en el <body> aplicara las siguientes fuentes*/
+body{
+    font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+/*Estilo para el formulario de contacto contact-form */
+/*para utilizar clases en css, agregamos un punto (.) como prefijo al nombre de la clase */
+.contact-form h2, .contact-form label {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.form-hint, .required-notification {
+    font-size: 11px;
+}
+
+/*agregamos estilo a la lista de elementos que componen el formulario*/
+
+.contact-form ul{
+    width: 750px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* agregamos estilo a los elementos <li> de la lista*/
+
+.contact-form li{
+    padding: 12px; /*aplicamos un relleno a todos los lados del elemento*/
+    border-bottom: 1px solid #eee; /*agregamos un borde de color tenue en la parte inferior de cada <li>*/
+    position: relative;
+}
+
+/* agregar un fino borde en la parte superior e inferior del formulario. 
+Esto se realiza utilizando las propiedades :first-child y :last-child*/
+.contact-form li:first-child, .contact-form li:last-child{
+    border-bottom: 1px solid #777;
+}
+
+
+/* Vamos a dar estilo al encabezado de nuestro formulario. Esto incluye la etiqueta
+del encabezado y la notificación que informa a los usuarios que los campos señalados
+con (*) son obligatorios */
+
+.contact-form h2{
+    margin: 0px;
+    display: inline;
+}
+
+.required-notification{
+    color: #d45252; /*agregamos el color rojo a la notificación*/
+    margin: 5px 0 0 0;
+    display: inline;
+    float: right;
+}
+
+/* Agregamos estilo a los elementos principales de nuestro formulario, las cajas de texto
+que nos permitirán recopilar la información del contacto*/
+/*estilo para el elemento <label>*/
+.contact-form label{
+    width: 150px; /*tamaño del elemento*/
+    margin-top: 3px; /*indicamos un margen superior de 3 px*/
+    display: inline-block;
+    float: left;
+    padding: 3px;
+}
+/*estilo para el elemento <input> */
+.contact-form input{
+    height: 20px;
+    width: 220px;
+    padding: 5px 8px;
+}
+
+/*estilo para el elemento <textarea>*/
+.contact-form textarea{
+    padding: 8px;
+    width: 300px;
+}
+
+/*estilo para el elemento <button>*/
+.contact-form button {
+    margin-left: 156px;
+}
+
+/*agregamos estilos visuales adicionales al formulario con CSS3*/
+
+.contact-form input, .contact-form textarea{
+    border: 1px solid #aaa; /*agregamos un borde solido color gris a la cajas de texto*/
+    box-shadow: 0px 0px 10px #ccc; /*aqui agregamos la sombra unicamente en el top de los elementos*/
+    border-radius: 10px;
+}
+/*agregamos el efecto focus para input y textarea*/
+.contact-form input:focus, .contact-form textarea:focus{
+    background: #fff;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+
+/*estilo para el botón, unicamente aplica para botones de tipo submit*/
+button.submit{
+    background-color: #68b12f;
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+/*agregamos un efecto al botón, para que al momento en que se pase sobre el
+modifique su estilo*/
+button.submit:hover{
+    opacity: .85;
+    cursor: pointer;
+}
+
+/*agregamos un efecto cuando el boton de enviar este activo*/
+button.submit:active{
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+}
